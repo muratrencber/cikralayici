@@ -1,0 +1,36 @@
+<!DOCYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="cikralayici.js">
+</script>
+
+<style>
+h1 {text-align: center;}
+
+div.all_areas{ display: flex; flex-direction: column;  width: 100%;}
+div.text_areas { align-self: center;}
+
+div.button_container { position:relative; width: 100%; height: 30px;}
+div.button_div {position: absolute; left: 30%; width: 40%; height:100%;}
+button.button_submit { width: 100%; height: 100%;}
+textarea { resize: none; margin: auto 10px;}
+</style>
+</head>
+<body>
+<br>
+<h1> ÇIKRALAYICI </h1>
+<div class = "all_areas">
+	<div class = "text_areas">
+		<textarea id='input_area' name='input_area' rows="30" cols="60" autofocus></textarea>
+		<textarea id='output_area' name='output_area' rows="30" cols="60" readonly="true"></textarea>
+	</div>
+</div>
+<br>
+<div class="button_container">
+	<div class = "button_div">
+		<button id="damn" class="button_submit" type="button" onclick="Cikrala()" > ÇIKRALA </button>
+	</div>
+</div>
+</body>
+</html>
