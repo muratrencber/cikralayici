@@ -12,7 +12,6 @@ let utf8Regex = /^[A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\
 function Cikrala()
 {
 	let originalText = document.getElementById("input_area").value;
-	console.log(originalText);
 	
 	for(let i = 0; i < originalText.length; i++)
 	{
@@ -37,7 +36,6 @@ function Cikrala()
 
 function isLetter(character)
 {
-	console.log(character);
 	let parse = parseInt(character);
 	let checkUTF8 = utf8Regex.test(character);
 	if(character === null || !checkUTF8 || character === " " || character === "." || !isNaN(parse))
